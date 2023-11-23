@@ -1,0 +1,16 @@
+[
+    {
+        "id": "0",
+        "username": "admin",
+        "email": "admin@admin.com",
+        "password": "admin",
+        "country": "Canada"
+    },
+    {
+        "id": "1",
+        "username": "Faridghr",
+        "email": "Faridghr@gmail.com",
+        "password": "12345",
+        "country": "Canada"
+    }
+]

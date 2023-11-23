@@ -1,0 +1,27 @@
+.Navbar {
+    display: flex;
+    align-items: center;
+    background-color: #f8f9fa;
+    padding: 10px 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .Navbar li {
+    list-style: none;
+    margin-right: 20px;
+    padding: 0;
+  }
+  
+  .Navbar button {
+    background-color: transparent;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-size: 16px;
+    color: #333;
+    font-weight: bold;
+  }
+  
+  .Navbar button:hover {
+    color: #ff6347; /* Change color on hover, adjust to your preference */
+  }

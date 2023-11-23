@@ -1,0 +1,26 @@
+.Comment {
+  margin-top: 20px;
+  border-top: 1px solid #ccc;
+  padding-top: 20px;
+}
+
+.Comment h3 {
+  font-size: 20px;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.Comment ul {
+  list-style: none;
+  padding: 0;
+}
+
+.Comment li {
+  border-bottom: 1px solid #eee;
+  padding: 15px 0;
+}
+
+.Comment p {
+  margin: 5px 0;
+  color: #555;
+}

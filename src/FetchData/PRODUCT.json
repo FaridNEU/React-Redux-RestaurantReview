@@ -1,0 +1,58 @@
+[
+    {
+        "name": "Burger King",
+        "address": "100 King Street",
+        "description": "Burger King is known for its flame-grilled burgers and delicious fries. With a diverse menu and quick service, it's a favorite among many.",
+        "comments": [
+            {
+                "id":"0",
+                "writer": "John Doe",
+                "timestamp": "2023-11-20T12:00:00Z",
+                "text": "Great place for quick meals!"
+            },
+            {
+                "id":"1",
+                "writer": "Jane Smith",
+                "timestamp": "2023-11-19T18:30:00Z",
+                "text": "Love their fries!"
+            }
+        ]
+    },
+    {
+        "name": "McDonald's",
+        "address": "155 Bloor Street",
+        "description": "McDonald's offers a wide range of fast food options, from classic burgers to breakfast items. Known for its convenience and quick meals.",
+        "comments": [
+            {
+                "id":"0",
+                "writer": "Emily Johnson",
+                "timestamp": "2023-11-18T09:45:00Z",
+                "text": "Their breakfast menu is fantastic."
+            },
+            {
+                "id":"1",
+                "writer": "Mike Brown",
+                "timestamp": "2023-11-17T15:20:00Z",
+                "text": "The service can be slow during peak hours."
+            }
+        ]
+    },
+    {
+        "name": "La Petite Creperie",
+        "address": "22 Rue de la Crêpe",
+        "description": "La Petite Creperie serves delightful French crepes filled with sweet or savory ingredients. A cozy spot for a taste of France.",
+        "comments": []
+    },
+    {
+        "name": "Sushi Palace",
+        "address": "78 Sakura Lane",
+        "description": "Sushi Palace is a haven for sushi enthusiasts, offering a vast selection of fresh sushi rolls and sashimi.",
+        "comments": []
+    },
+    {
+        "name": "Mama Rosa's Italian Kitchen",
+        "address": "30 Pasta Avenue",
+        "description": "Mama Rosa's Italian Kitchen crafts authentic Italian dishes with homemade sauces and traditional recipes.",
+        "comments": []
+    }
+]

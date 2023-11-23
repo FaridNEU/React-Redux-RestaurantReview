@@ -1,0 +1,68 @@
+.Restaurant {
+    padding: 20px;
+    border: 1px solid #ccc;
+    margin-bottom: 20px;
+    background-color: #fff;
+  }
+  
+  .Restaurant h2 {
+    margin-top: 0;
+    font-size: 24px;
+    color: #333;
+  }
+  
+  .Restaurant img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+  }
+  
+  .Restaurant p {
+    margin: 5px 0;
+    color: #555;
+  }
+  
+  .Comments {
+    margin-top: 20px;
+    border-top: 1px solid #ccc;
+    padding-top: 20px;
+  }
+  
+  .Comments h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+    color: #333;
+  }
+  
+  .Comments ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .Comments li {
+    border-bottom: 1px solid #eee;
+    padding: 15px 0;
+  }
+  
+  .Comments p {
+    margin: 5px 0;
+    color: #555;
+  }
+  
+  .NewComment textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+  }
+  
+  .NewComment button {
+    padding: 8px 20px;
+    background-color: #ff6347;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+  }
+  
+  .NewComment button:hover {
+    background-color: #d84315;
+  }

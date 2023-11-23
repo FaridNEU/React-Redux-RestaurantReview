@@ -1,0 +1,39 @@
+.RestaurantList {
+    list-style: none;
+    padding: 0;
+    margin-left: 20px;
+  }
+  
+  .RestaurantList li {
+    border-bottom: 2px solid #ccc;
+    padding: 20px 0;
+  }
+  
+  .RestaurantList h2 {
+    margin-top: 0;
+    font-size: 24px;
+    color: #333;
+  }
+  
+  .RestaurantList img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+  }
+  
+  .RestaurantList p {
+    margin: 5px 0;
+    color: #555;
+  }
+
+  .RestaurantList button {
+    padding: 10px 20px;
+    background-color: #ff6347;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+  }
+  
+  .RestaurantList button:hover {
+    background-color: #d84315;
+  }
