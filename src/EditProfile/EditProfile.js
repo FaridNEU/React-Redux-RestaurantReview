@@ -1,5 +1,5 @@
 
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useState, useRef } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
 import { setLoggedInUser, deleteLoggedInUser } from '../reducers/loggedInReducer';
 import { editUser } from '../reducers/userReducer';
@@ -14,6 +14,7 @@ function EditProfile() {
     const users = useSelector((state) => state.users.users); 
     const dispatch = useDispatch();
     const navigate = useNavigate();
+    const inputSubjectRef = useRef(null);
 
     const [loggedInUser, setLoggedInUser] = useState({
         _id: "",
@@ -36,6 +37,10 @@ function EditProfile() {
           }
         });
     }, [dispatch]);
+
+    useEffect(() => {
+        inputSubjectRef.current.focus();
+    }, []);
 
     const handleChange = (e)=>{
         const {name, value} = e.target;
@@ -88,7 +93,7 @@ function EditProfile() {
             </div>
             <div>
                 <label>Email: </label>
-                <input type="email" name="email" value={loggedInUser.email} onChange={handleChange}/>
+                <input ref={inputSubjectRef} type="email" name="email" value={loggedInUser.email} onChange={handleChange}/>
             </div>
             <div>
                 <label>Password: </label>

@@ -5,11 +5,11 @@ import Header from '../Header/Header';
 import Footer from '../Footer/Footer';
 import EditProfile from '../EditProfile/EditProfile';
 import RestaurantView from '../RestaurantView/RestaurantView';
-import RestaurantEdit from '../RestaurantEdit/RestaurantEdit';
 import Dashboard from '../AdminDashboard/Dashboard';
 import RestaurantList from '../RestaurantList/RestaurantList';
-//import R from './P.json';
-//import Restaurant from '../Restaurant/Restaurant';
+import EditPost from '../EditPost/EditPost';
+import AddPost from '../AddPost/AddPost';
+import AdminDashboard from '../AdminDashboard/AdminDashboard';
 import LogIn from '../LogIn/LogIn';
 import Register from '../Register/Register';
 
@@ -46,8 +46,14 @@ function App() {
               <EditProfile/>
             </div>
           } />
+          <Route path="/adminDashboard" exact element={
+            <div>
+              <AdminDashboard/>
+            </div>
+          } />
           <Route path="/view/:postId" element={<RestaurantView />} />
-          <Route path="/edit/:postId" element={<RestaurantEdit />} />
+          <Route path="/editPost/:postId" element={<EditPost />} />
+          <Route path="/addPost" element={<AddPost />} />
         </Routes>
       </div>
       <div>

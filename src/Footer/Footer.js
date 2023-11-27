@@ -4,7 +4,7 @@ import './Footer.css';
 function Footer() {
   return (
     <div className="Footer">
-      Developed By Farid 
+      Footer : Developed By Farid 
     </div>
   );
 }

@@ -1,6 +1,6 @@
 import { useSelector, useDispatch } from 'react-redux';
 import { setLoggedInUser, deleteLoggedInUser } from '../reducers/loggedInReducer';
-import React,{ useState,useEffect } from "react";
+import React,{ useState,useEffect, useRef } from "react";
 import { fetchUsers } from '../FetchData/FetchData';
 import { Link, useNavigate } from 'react-router-dom';
 import './LogIn.css';
@@ -9,10 +9,16 @@ function LogIn(){
     const existingUsers = useSelector((state) => state.users.users);
     const dispatch = useDispatch();
     const navigate = useNavigate();
+    const inputSubjectRef = useRef(null);
+
 
     useEffect(() => {
         dispatch(fetchUsers());
     }, [dispatch]);
+
+    useEffect(() => {
+        inputSubjectRef.current.focus();
+    }, []);
 
     const [username, setUsername ] = useState('');
     const [password, setPassword ] = useState('');
@@ -41,7 +47,7 @@ function LogIn(){
         <div className="LogInContainer">
             <h2>Log In</h2>
             <form onSubmit={handleSubmit}>
-                <input type="text" placeholder="Username" value={username} onChange={(e)=> setUsername(e.target.value)}/>
+                <input ref={inputSubjectRef} type="text" placeholder="Username" value={username} onChange={(e)=> setUsername(e.target.value)}/>
                 <input type="password" placeholder="Password" value={password} onChange={(e)=> setPassword(e.target.value)}/>
                 <button type="submit">Login</button>
             </form>

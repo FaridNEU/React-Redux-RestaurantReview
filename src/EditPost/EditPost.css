@@ -1,0 +1,48 @@
+.EditProfile {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 60vh;
+  }
+  
+  .EditProfile h2 {
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: #333;
+  }
+  
+  .EditProfile form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 500px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    background-color: #fff;
+  }
+  
+  .EditProfile label {
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #333;
+  }
+  
+  .EditProfile input,
+  .EditProfile select {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+  }
+  
+  .EditProfile button {
+    padding: 10px 20px;
+    background-color: #ff6347;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+  }
+  
+  .EditProfile button:hover {
+    background-color: #d84315;
+  }

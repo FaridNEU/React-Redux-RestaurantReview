@@ -1,8 +1,6 @@
 import { addPost, setPosts } from '../reducers/postReducer';
 import { addUser, setUsers } from '../reducers/userReducer';
 import { setLoggedInUser } from '../reducers/loggedInReducer';
-//import restaurantsData from './PRODUCT.json';
-//import usersData from './USERS.json';
 
 
 export const fetchPosts = () => async (dispatch) => {

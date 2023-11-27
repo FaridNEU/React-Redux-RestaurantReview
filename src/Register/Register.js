@@ -1,4 +1,4 @@
-import React,{ useState,useEffect } from "react";
+import React,{ useState,useEffect, useRef } from "react";
 import './Register.css';
 import { addUser } from '../reducers/userReducer';
 import { useSelector, useDispatch } from 'react-redux';
@@ -8,6 +8,12 @@ function Register(){
     const existingUsers = useSelector((state) => state.users.users);
     const dispatch = useDispatch();
     const navigate = useNavigate();
+    const inputSubjectRef = useRef(null);
+
+
+    useEffect(() => {
+        inputSubjectRef.current.focus();
+    }, []);
 
     const [formData, setFormData] = useState({
         username:'',
@@ -73,7 +79,7 @@ function Register(){
             <form onSubmit={handleSubmit}>
                 <div>
                     <label>User Name: </label>
-                    <input type="text" name="username" value={formData.username} onChange={handleChange}/>
+                    <input ref={inputSubjectRef} type="text" name="username" value={formData.username} onChange={handleChange}/>
                 </div>
                 <div>
                     <label>Email: </label>

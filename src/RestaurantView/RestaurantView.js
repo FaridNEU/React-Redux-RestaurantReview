@@ -4,6 +4,8 @@ import './RestaurantView.css'
 import { useParams } from 'react-router-dom';
 import { useSelector, useDispatch } from 'react-redux';
 import { addComment } from '../reducers/postReducer';
+import { Link, useNavigate } from 'react-router-dom';
+
 
 
 const RestaurantView = () => {
@@ -25,7 +27,7 @@ const RestaurantView = () => {
   const post = restaurants[postId];  
   
   if (!post) {
-    return <p>Loading...</p>; // Or a message indicating the post doesn't exist
+    return <p>Loading...</p>; 
   }
   const { name, image, address, description } = post.data;
   const { comments } = post;
@@ -91,7 +93,7 @@ const RestaurantView = () => {
           </div>
         ) : (
           <div>
-            <p>You have to Login to add Comment!</p>
+            <p>You have to <Link to={'/login'}>Login</Link> to add Comment!</p>
           </div> 
         )}
     </div>

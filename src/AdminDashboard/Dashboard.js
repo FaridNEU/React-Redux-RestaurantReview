@@ -50,7 +50,11 @@ function Dashboard() {
 
 
     if (!users) {
-      return <p>Loading...</p>; // Or a message indicating the post doesn't exist
+      return <p>Loading...</p>; 
+    }
+
+    if(loggedInUser.username === 'admin' ){
+      navigate("/adminDashboard");
     }
 
     return (
